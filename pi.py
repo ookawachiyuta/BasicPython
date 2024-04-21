@@ -4,4 +4,7 @@ text = """
 """
 
 # TODO
-
+textlist = text.replace(",","").replace(".","").replace("    ","").replace("\n"," ").replace(",","").strip().split(" ")
+numList = list(map(len, textlist))
+strList = list(map(str, numList))
+print("".join(strList))
